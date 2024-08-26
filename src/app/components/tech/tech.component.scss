@@ -35,10 +35,5 @@ main{
 @media (min-width: 1024px) {
     .container{
         grid-template-columns:  repeat(8,1fr) ;
-    }
-    img{
-        width: 64px !important;
-        height: auto !important;
-        
-    }
+    }   
 }
