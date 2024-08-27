@@ -18,7 +18,7 @@ export class ProjectService {
 
   getRepositories(): Observable<inforepo[]>  {
     return this.htppclient.get<any[]>(this.url).pipe(
-      map((repos) => repos.filter((repo) => repo.name === 'picpay-backend')),
+      map((repos) => repos.filter((repo) => repo.name !='my-portfolio')),
       switchMap((inforepo) => {
         return forkJoin(
           inforepo.map((repo) =>

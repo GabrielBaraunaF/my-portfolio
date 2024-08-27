@@ -1,8 +1,14 @@
-<tbody>
-    <tr *ngFor="let inforepo of inforepo | async">
-        <td>{{inforepo.description}}</td>
-        <td>{{inforepo.language}}</td>
-        <td>{{inforepo.name}}</td>
-        <td>{{inforepo.status}}</td>
-    </tr>
-</tbody>
+<main>
+  <h1>Projetos</h1>
+  <section class="cards">
+    <div class="card" *ngFor="let inforepo of inforepo | async">
+      <img src="https://i.imgur.com/WoGsZlg.png" alt="" />
+      <div class="info">
+        <p> Descrição:{{ inforepo.description }}</p>
+        <p> Linguagem:{{ inforepo.language }}</p>
+        <p> Nome Repositorio:{{ inforepo.name }}</p>
+        <p> status:{{ inforepo.status }}</p>
+      </div>
+    </div>
+  </section>
+</main>
