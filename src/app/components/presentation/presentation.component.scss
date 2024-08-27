@@ -1,17 +1,39 @@
 .apresetation{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     color: white;
     background-color: black;
     width: 100%;
+    padding-bottom: 15px;
 
     .apresetation-text{
         display: flex;
         justify-content: center;
         gap: 100px;
+
+        h1{
+            font-size: 1.2em;
+        }
     }
 
     img{
-        width: 130px;
+        width: 90%;
         height: auto;
     }
+}
+h1{
+    font-size: 4.2em;
+}
+@media (min-width: 768px) {
+    .apresetation{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 40% !important;
+            height: auto !important;
+        }
+    }
+    
 }

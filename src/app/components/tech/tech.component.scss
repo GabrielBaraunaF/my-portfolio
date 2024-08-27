@@ -29,8 +29,11 @@ main{
 
     img{
         width: 48px;
-        height: auto;
-        
+        height: auto;   
+    }
+    img:hover { 
+        transform: scale(1.1); 
+        cursor: pointer; 
     }
 }
 @media (min-width: 1024px) {
