@@ -1,0 +1,34 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 40px;
+
+    .linha-horizontal {
+        width: 100%;
+        height: 2px;
+        background-color: #aca7a7;
+    }
+    
+    
+}
+@media (min-width: 768px) {
+    .info{
+        flex-direction: row;
+    }
+    .linha-horizontal{
+        width: 4px !important;
+        height: 80px !important;
+        background-color: #aca7a7;
+    }
+}

@@ -1,0 +1,17 @@
+.apresetation{
+    display: flex;
+    color: white;
+    background-color: black;
+    width: 100%;
+
+    .apresetation-text{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    img{
+        width: 130px;
+        height: auto;
+    }
+}
