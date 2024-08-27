@@ -6,6 +6,7 @@ main{
     width: 100%;
     padding-bottom: 55px;
     padding-top: 55px;
+    gap: 40px;
 }
 
 .info{
@@ -19,9 +20,37 @@ main{
         width: 100%;
         height: 2px;
         background-color: #aca7a7;
+    }  
+}
+
+.social{
+    width: 40%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+
+    a{
+        text-decoration: none;
     }
-    
-    
+
+    button {
+        border: 2px solid black;
+        background-color: white;
+        padding: 15px 30px; 
+        cursor: pointer; 
+        display: flex; 
+        align-items: center; 
+        gap: 10px;
+        border-radius: 22px ;
+        color: black;
+        
+      }
+      
+      button img {
+        width: 20px; 
+        height: 20px;
+      }
 }
 @media (min-width: 768px) {
     .info{
@@ -31,5 +60,8 @@ main{
         width: 4px !important;
         height: 80px !important;
         background-color: #aca7a7;
+    }
+    button{
+        font-size: 18px;
     }
 }
