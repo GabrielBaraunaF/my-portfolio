@@ -1,43 +1,79 @@
-main{
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.cards {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 3px solid black;
+
+  img {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 100px;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+    height: 60%;
+  }
 }
-.cards{
-     width: 70%;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    gap: 30px;
+.info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  justify-content: center;
 
-}
+  a{
+    text-decoration: none;
+    align-self: center;
+    :hover{
+        cursor: pointer;
+    }
 
-.card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  button{
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
     border: 2px solid black;
-    
-    img{
-        width: 100%;
-        height: auto;
+    background-color: black;
+    color: white;
+  }
+}
+p {
+  font-size: 1.1em;
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .info{
+    gap: 10px;
+    button{
+        padding: 4px 16px;
     }
+  }
 }
-.info{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-
-}
-p{
-    font-size: 1.0em;
-}
-@media (min-width:1024px) {
-    .cards{
-        grid-template-columns: repeat(2,1fr);
+@media (min-width: 1500px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
     }
-}
-
-
+    .info{
+      gap: 30px;
+      button{
+          padding: 4px 16px;
+      }
+    }
+  }
   

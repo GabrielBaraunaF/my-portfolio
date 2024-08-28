@@ -5,4 +5,5 @@ export interface inforepo {
     repositories:string;
     site:string;
     status:string;
+    url:string;
 }
