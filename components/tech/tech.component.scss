@@ -1,0 +1,43 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+    background-color: black;
+    padding-bottom: 45px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+    h1,p{
+        margin: auto;
+    }
+}
+
+.container{
+    width: 50%;
+    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+
+    img{
+        width: 48px;
+        height: auto;   
+    }
+    img:hover { 
+        transform: scale(1.1); 
+        cursor: pointer; 
+    }
+}
+@media (min-width: 1024px) {
+    .container{
+        grid-template-columns:  repeat(8,1fr) ;
+    }   
+}
