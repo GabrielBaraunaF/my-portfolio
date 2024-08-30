@@ -6,6 +6,7 @@
     background-color: black;
     width: 100%;
     padding-bottom: 15px;
+    gap: 30px;
 
     .apresetation-text{
         display: flex;
@@ -20,6 +21,8 @@
     img{
         width: 70%;
         height: auto;
+        border-radius: 50%;
+       
     }
 }
 h1{
