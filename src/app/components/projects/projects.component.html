@@ -1,19 +1,40 @@
 <main>
-  <h1>Projetos</h1>
+  <h2>Projetos:</h2>
   <section class="cards">
-    <div class="card" *ngFor="let inforepo of inforepo | async">
-      <img [src]="inforepo.url" alt="logo" />
-      <div class="info">
-        <p> Descrição:{{ inforepo.description }}</p>
-        <p> Linguagem:{{ inforepo.language }}</p>
-        <p> Nome Repositorio:{{ inforepo.name }}</p>
-        <p> Status:{{ inforepo.status }}</p>
-        <a [href]="inforepo.repositories">
-          <button>
-            Repositorio
-        </button>
-      </a>
-      </div>
-    </div>
-  </section>
+  <app-repo-card
+  description="Este projeto tem como objetivo desenvolver uma API REST para gerenciamento de sessões de votação em uma cooperativa. A API permite o registro de agendas, abertura de sessões de votação, recebimento de votos e apuração de resultados."
+  language="Java,Spring Boot,Docker,Swagger,RabbitMq"
+  name="assemblyvote"
+  status="concluido"
+  url="assets/assemblyvote.png"
+  repositoryLink="https://github.com/GabrielBaraunaF/assemblyvote">
+  </app-repo-card>
+
+  <app-repo-card
+  description="Desafio PicPay. O PicPay Simplificado é uma plataforma de pagamentos simplificada. Nela é possível depositar e realizar transferências de dinheiro entre usuários. Temos 2 tipos de usuários, os comuns e lojistas, ambos têm carteira com dinheiro e realizam transferências entre eles."
+  language="Java,Spring Boot"
+  name="picpay-backend"
+  status="Andamennto"
+  url="assets/picpay.png"
+  repositoryLink="https://github.com/GabrielBaraunaF/picpay-backend/tree/master">
+  </app-repo-card>
+
+  <app-repo-card
+  description="Frontend do Desafio PicPay, Interface intuitiva."
+  language="Angular"
+  name="picpay-frontend"
+  status="Andamennto"
+  url="assets/picpayFrontend.png"
+  repositoryLink="https://github.com/GabrielBaraunaF/picpay-frontend">
+  </app-repo-card>
+
+  <app-repo-card
+  description="Encurtador de url, permite encurtar URLS longas, para torná-las mais compactas e que você pode controlar o prazo de expiração da url e geração de qr para url"
+  language="Java,Spring Boot"
+  name="urlshortner"
+  status="Concluido"
+  url="assets/enc.png"
+  repositoryLink="https://github.com/GabrielBaraunaF/urlshortner">
+  </app-repo-card>
+</section>
 </main>
