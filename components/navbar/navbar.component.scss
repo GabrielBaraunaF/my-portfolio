@@ -8,12 +8,13 @@ main{
     padding-bottom: 50px;
 }
 .nav{
-    width: 40%;
+    width: 30%;
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: flex-start;
     color: white;
+    font-size: 0.8rem;
 
     a{
         text-decoration: none;
