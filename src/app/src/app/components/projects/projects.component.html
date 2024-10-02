@@ -1,0 +1,19 @@
+<main>
+  <h1>Projetos</h1>
+  <section class="cards">
+    <div class="card" *ngFor="let inforepo of inforepo | async">
+      <img [src]="inforepo.url" alt="logo" />
+      <div class="info">
+        <p> Descrição:{{ inforepo.description }}</p>
+        <p> Linguagem:{{ inforepo.language }}</p>
+        <p> Nome Repositorio:{{ inforepo.name }}</p>
+        <p> Status:{{ inforepo.status }}</p>
+        <a [href]="inforepo.repositories">
+          <button>
+            Repositorio
+        </button>
+      </a>
+      </div>
+    </div>
+  </section>
+</main>
